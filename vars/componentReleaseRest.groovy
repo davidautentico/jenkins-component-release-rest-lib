@@ -4,5 +4,5 @@ def httpGet(Map args) {
     if (response.status != 200) {
         jenkinsWorkflowScript.invokeMethod 'echo', [response.content] as Object[]
     }
-    response.content
+    response
 }
